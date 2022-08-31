@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>Sorting Algorithm Visualizer</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>Sorting Algorithm Visualizer</header>
+            <div id="bars-container"></div>
+            <div id="buttons-container">
+                <select name="algorithms" id="algorithms">
+                    <option value="bubble" class="alg-options">Bubble Sort</option>
+                    <option value="insertion" class="alg-options">Insertion Sort</option>
+                    <option value="merge" class="alg-options">Merge Sort</option>
+                    <option value="quick" class="alg-options">Quick Sort</option>
+                    <option value="selection" class="alg-options">Selection Sort</option>
+                </select>
+                <button id="randomize" onclick="createRandomArray()">
+                    Randomize Array
+                </button>
+                <button id="sort" onclick="sort()">Sort</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
